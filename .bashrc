@@ -99,6 +99,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 #alias for clearing and printing my public ip, link to source: https://linuxize.com/post/how-to-create-bash-aliases/
 alias c="clear"
 alias myip='curl ipinfo.io/ip'
+# Search command line history
+alias h="history | grep "
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
