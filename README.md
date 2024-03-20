@@ -11,4 +11,5 @@ makaylac02 dot files
 * https://github.com/1blckhrt/dotfiles/tree/main  
 * https://github.com/mkijowski/dotfiles  
 * https://git-scm.com/book/sv/v2/Customizing-Git-Git-Configuration
+* https://linuxize.com/post/how-to-create-bash-aliases/
 
