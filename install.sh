@@ -24,7 +24,8 @@ if [[ "$(id -u)" -eq 0 ]]; then
 			libasound2 \
 			libxi6 \
 			libxtst6 \ 
-			nsnake
+			unzip
+
 		if [[ -e $(ls Anaconda3*.sh 2> /dev/null | head -1) ]]; then
 			echo "Installer found, running it"
 		        bash Anaconda3-2024.02-1-Linux-x86_64.sh -b -p /home/$ME/anaconda3
@@ -39,16 +40,6 @@ if [[ "$(id -u)" -eq 0 ]]; then
 		echo "apt is not installed at the specified location."
 	fi
 	
-	if [[ -e $(ls awsdl/awscliv2.zip 2> /dev/null | head -1) ]]; then
-		echo "AWS CLI V2 installer found, running it"
-		unzip awsdl/awscliv2.zip -d awsdl/
-		./awsdl/aws/install 
-	else
-		mkdir awsdl
-		curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awsdl/awscliv2.zip"
-		unzip awsdl/awscliv2.zip -d awsdl/
-		./awsdl/aws/install
-	fi 
 
 	# moving git files
 	git() {
@@ -81,6 +72,13 @@ if [[ "$(id -u)" -eq 0 ]]; then
 	bash vundleconfig.sh
 	}
 	vundleconfig
+	
+	# installing aws cli
+	awsconfig() {
+	chmod -R +x awsconfig.sh
+	bash awsconfig.sh
+	}
+	awsconfig
 
 	
 	# calling methods
