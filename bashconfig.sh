@@ -8,5 +8,6 @@ bash_config() {
 	bash -c 'source ~/.bashrc'
 
 }
+
 bash_config
 	

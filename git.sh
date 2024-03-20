@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+git_config() {
 # setting global user name and email
 git config --global user.name MakaylaCarr
 git config --global user.email carr.137@wright.edu
@@ -19,5 +19,6 @@ git config --global help.autocorrect 80
 ln -s /home/$ME/dotfiles/gitfiles/.gitconfig /home/$ME/.gitconfig
 ln -s /home/$ME/dotfiles/gitfiles/.gitmessage.txt /home/$ME/.gitmessage.txt
 
-echo "test"
-
+echo "git test"
+}
+git_config

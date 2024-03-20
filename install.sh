@@ -1,3 +1,4 @@
+#!bin/bash
 #Username that called script
 echo $SUDO_USER
 ME=$SUDO_USER
@@ -52,26 +53,38 @@ if [[ "$(id -u)" -eq 0 ]]; then
 
 	# moving git files
 	git() {
-	chmod -R +x ~/dotfiles/git.sh/
+	chmod -R +x git.sh
 	bash git.sh
 	}
+	git
+
 	
 	# moving bashrc
 	bash() {
-	chmod -R +x ~/dotfiles/git.sh/
+	chmod -R +x bashconfig.sh
 	bash bashconfig.sh
 	}
+	bash	
+	
+	
 	# moving ssh files
 	sshconfig() {
-	chmod -R +x ~/dotfiles/sshconfig.sh
+	chmod -R +x sshconfig.sh
 	bash sshconfig.sh
 	}
+	sshconfig
+	
+	
 
 	# installing Vundle
 	vundleconfig() {
-	chmod -R +x /dotfiles/vundleconfig.sh
+	chmod -R +x vundleconfig.sh
 	bash vundleconfig.sh
 	}
+	vundleconfig
+
+	
+	# calling methods
 	
 	# decided to make vim / Vundle it's own thing
 	#bash vundle-install.sh
@@ -80,5 +93,6 @@ if [[ "$(id -u)" -eq 0 ]]; then
 else
 	echo "Script is not running as root, exiting..." 1>&2
 	exit 1
+
 fi
 
