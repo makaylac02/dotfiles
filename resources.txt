@@ -1,0 +1,2 @@
+://github.com/pattonsgirl/dotfiles/blob/main/install.sh
+https://github.com/1blckhrt/dotfiles/tree/main
