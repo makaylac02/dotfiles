@@ -24,7 +24,6 @@ if [[ "$(id -u)" -eq 0 ]]; then
 			libasound2 \
 			libxi6 \
 			libxtst6 \ 
-			ninvaders \
 			nsnake
 		if [[ -e $(ls Anaconda3*.sh 2> /dev/null | head -1) ]]; then
 			echo "Installer found, running it"
