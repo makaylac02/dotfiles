@@ -43,24 +43,24 @@ if [[ "$(id -u)" -eq 0 ]]; then
 
 	# moving git files
 	git() {
-	chmod -R +x git.sh
-	bash git.sh
+	chmod -R +rx /home/$ME/dotfiles/configfiles/git.sh
+	bash /home/$ME/dotfiles/configfiles/git.sh
 	}
 	git
 
 	
 	# moving bashrc
 	bashconfig() {
-	chmod -R +x bashconfig.sh
-	bash bashconfig.sh
+	chmod -R +rx /home/$ME/dotfiles/configfiles/bashconfig.sh
+	bash /home/$ME/dotfiles/configfiles/bashconfig.sh
 	}
 	bashconfig	
 	
 	
 	# moving ssh files
 	sshconfig() {
-	chmod -R +x sshconfig.sh
-	bash sshconfig.sh
+	chmod -R +rx /home/$ME/dotfiles/configfiles/sshconfig.sh
+	bash /home/$ME/dotfiles/configfiles/sshconfig.sh
 	}
 	sshconfig
 	
@@ -68,15 +68,15 @@ if [[ "$(id -u)" -eq 0 ]]; then
 
 	# installing Vundle
 	vundleconfig() {
-	chmod -R +x vundleconfig.sh
-	bash vundleconfig.sh
+	chmod -R +rx /home/$ME/dotfiles/configfiles/vundleconfig.sh
+	bash /home/$ME/dotfiles/configfiles/vundleconfig.sh
 	}
 	vundleconfig
 	
 	# installing aws cli
 	awsconfig() {
-	chmod -R +x awsconfig.sh
-	bash awsconfig.sh
+	chmod -R +rx /home/$ME/dotfiles/configfiles/awsconfig.sh
+	bash /home/$ME/dotfiles/configfiles/awsconfig.sh
 	}
 	awsconfig
 
