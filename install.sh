@@ -1,4 +1,4 @@
-n/bash
+#!/bin/bash
 #Username that called script
 echo $SUDO_USER
 ME=$SUDO_USER
@@ -79,14 +79,7 @@ if [[ "$(id -u)" -eq 0 ]]; then
 	bash /home/$ME/dotfiles/configfiles/awsconfig.sh
 	}
 	awsconfig
-
 	
-	# calling methods
-	
-	# decided to make vim / Vundle it's own thing
-	#bash vundle-install.sh
-	#ln -s /home/$ME/dotfiles/vimrc /home/$ME/.vimrc
-	#vim +PluginInstall +qall	
 else
 	echo "Script is not running as root, exiting..." 1>&2
 	exit 1
