@@ -1,4 +1,4 @@
-#!bin/bash
+n/bash
 #Username that called script
 echo $SUDO_USER
 ME=$SUDO_USER
@@ -60,11 +60,11 @@ if [[ "$(id -u)" -eq 0 ]]; then
 
 	
 	# moving bashrc
-	bash() {
+	bashconfig() {
 	chmod -R +x bashconfig.sh
 	bash bashconfig.sh
 	}
-	bash	
+	bashconfig	
 	
 	
 	# moving ssh files
