@@ -7,8 +7,8 @@ makaylac02 dot files
 	*  The purpose of seperating these into seperate scripts is to make easy additions and changes to any particular thing, without messing up a giant script.
 
 ## Resources:
-//github.com/pattonsgirl/dotfiles/blob/main/install.sh
-https://github.com/1blckhrt/dotfiles/tree/main
-https://github.com/mkijowski/dotfiles
-https://git-scm.com/book/sv/v2/Customizing-Git-Git-Configuration
+* //github.com/pattonsgirl/dotfiles/blob/main/install.sh  
+* https://github.com/1blckhrt/dotfiles/tree/main  
+* https://github.com/mkijowski/dotfiles  
+* https://git-scm.com/book/sv/v2/Customizing-Git-Git-Configuration
 
